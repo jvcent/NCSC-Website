@@ -1,0 +1,35 @@
+#mobile {
+    display: none;
+}
+
+#mobile i{
+    color: #071d07;
+}
+
+@media screen and (max-width: 769px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        top: 50px;
+        right: -300px;
+        width: 150px;
+        height: 20vh;
+        /* background-color: aquamarine; */
+        padding: 10px 0 0 10px;
+        transition: 0.3s ease-in-out;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    #mobile li {
+        cursor: pointer;
+    }
+}

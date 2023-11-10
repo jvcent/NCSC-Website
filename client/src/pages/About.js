@@ -1,9 +1,9 @@
-const About = () => {
+const Contact = () => {
     return (
         <div className="h-screen w-screen absolute bg-cover bg-center bg-background">
-            About
+            Contact
         </div>
     );
 }
 
-export default About;
+export default Contact;

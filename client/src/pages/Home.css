@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Serif+SC:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap');
 
 #heading {
-    font-size: 3.2vw;
+    @media only screen and (min-width: 768px) {
+      font-size: 3.2vw;
+    }
     font-family: 'Oswald', sans-serif;
 }
 
 #description {
     font-size: calc(0.7vh + 0.8vw);
     font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
 #core {
@@ -16,6 +20,37 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+
+#slanted {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+#about-heading {
+  @media only screen and (min-width: 768px) {
+    font-size: 2.5vw;
+  }
+  font-family: 'Lato', sans-serif;
+}
+
+#about-description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: calc(0.7vh + 0.8vw);
+}
+
+#headers {
+  min-width: 20%;
+  max-width: 30%;
+}
+
+#info-title {
+  font-size: calc(0.9vh + 0.75vw);
+}
+
+#info {
+  font-size: calc(0.7vh + 0.7vw);
+}
+
 
 button {
     position: relative;
@@ -32,9 +67,8 @@ button {
    button.explore {
     font-weight: 600;
     text-transform: uppercase;
-    background: rgb(66, 209, 104);
-    border: 2px solid #06520c;
-    border-radius: 0.75em;
+    background: #24A74A;
+    /* border: 2px solid #06520c; */
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
@@ -138,4 +172,5 @@ button {
       transform: scale(1,1);
     }
   }
+
 

@@ -8,9 +8,10 @@ module.exports = {
       colors: {
         'txt': '#071d07',
         'background': '#def7df',
-        'primary': '#259827',
+        'primary': '#74DB75',
         'secondary': '#d6f5d6',
         'accent': '#32cd34', 
+        'logo': '#24A74A', 
       },
     },
   },

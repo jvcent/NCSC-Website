@@ -1,13 +1,22 @@
 import { useState } from 'react';
-import ncsclogo from './assets/ncsc-logo.png'
+import { useNavigate } from "react-router-dom";
+import ncsclogo from './assets/ncsc-logo.png';
+import { HashLink } from 'react-router-hash-link';
 import { NavLink } from "react-router-dom";
 import './NavBar.css';
 
 const NavBar = () => {
     const [state, setState] = useState(false);
+    const [active, setActive] = useState("");
+    const navigate = useNavigate();
 
     const handleButtonClick = () => {
         setState(prevState => !prevState);
+    }
+
+    const handleNavClick = (id) => {
+        setActive(id);
+        if (!(id === "about")) {navigate("/" + id);}
     }
 
     return (
@@ -15,21 +24,26 @@ const NavBar = () => {
             <div className='bg-gradient-to-b from-white from-30% absolute w-screen flex flex-row justify-between items-center px-8 py-4 lg:px-12 lg:py-4'>
                 <span className='cursor-pointer'><NavLink to="/"><img className='h-8 md:h-10 lg:-h-12 mt-2' src={ncsclogo} alt='NCSC Logo'/></NavLink></span>
                 
-                <ul className={`text-txt lg:text-lg lg:text-xl flex flex-row space-x-8 font-semibold ${state ? "#navbar active" : "#navbar"}`} id='navbar'>
+                <ul className={`lg:text-lg lg:text-xl flex flex-row space-x-8 font-semibold ${state ? "#navbar active" : "#navbar"}`} id='navbar'>
                     <li></li>
-                    <li>
-                        <NavLink to="/about">About</NavLink>
+                    <li id='item' onClick={() => handleNavClick("about")} 
+                    className={`${active === "about" ? "text-logo" : "text-txt"}`}>
+                        <HashLink smooth to='/#about' > About </HashLink>
                     </li>
-                    <li>
+                    <li id='item' onClick={() => handleNavClick("events")} 
+                    className={`${active === "events" ? "text-logo" : "text-txt"}`}>
                         <NavLink>Events</NavLink>
-                    </li>
-                    <li>
+                    </li >
+                    <li id='item' onClick={() => handleNavClick("council")} 
+                    className={`${active === "council" ? "text-logo" : "text-txt"}`}>
                         <NavLink>Council</NavLink>
                     </li>
-                    <li>
+                    <li id='item' onClick={() => handleNavClick("office")} 
+                    className={`${active === "office" ? "text-logo" : "text-txt"}`}>
                         <NavLink>Office Hours</NavLink>
                     </li>
-                    <li>
+                    <li id='item' onClick={() => handleNavClick("contact")} 
+                    className={`${active === "contact" ? "text-logo" : "text-txt"}`}>
                         <NavLink>Contact</NavLink>
                     </li>
                     

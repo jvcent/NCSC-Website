@@ -1,0 +1,34 @@
+
+#office-heading {
+    @media only screen and (min-width: 768px) {
+        font-size: 2.5vw;
+      }
+      font-family: 'Lato', sans-serif;
+}
+
+#office-description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: calc(0.7vh + 0.7vw);
+}
+
+#topper {
+    height: fit-content;
+    background: linear-gradient(
+    to bottom, 
+    #74db7600 0%, 
+    #74db7600 25%, 
+    #74DB75 25%, 
+    #74DB75 100%
+  );
+
+  @media screen and (max-width: 769px) {
+    background: linear-gradient(
+    to bottom, 
+    #74db7600 0%, 
+    #74db7600 15%, 
+    #74DB75 15%, 
+    #74DB75 100%
+    );
+  }
+}

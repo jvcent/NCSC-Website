@@ -38,19 +38,29 @@
     font-size: calc(0.7vh + 0.8vw);
 }
 
-#headers {
-  min-width: 20%;
-  max-width: 30%;
+#header-container {
+  @media (max-width: 900px) {
+    flex-wrap: wrap;
+  }
 }
 
 #info-title {
   font-size: calc(0.9vh + 0.75vw);
 }
 
-#info {
-  font-size: calc(0.7vh + 0.7vw);
-}
+#des {
+  font-size: calc(0.75vh + 0.75vw); 
 
+  @media (max-width: 900px) {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+
+  @media (max-width: 600px) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
 
 button {
     position: relative;

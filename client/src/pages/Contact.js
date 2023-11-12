@@ -5,14 +5,13 @@ import email from "./assets/email.json";
 
 const Contact = () => {
     return (
-        <div className="h-auto w-screen bg-background 
-        px-32 py-24">
-            <div className="h-auto w-full flex flex-row flex-wrap space-x-2 p-6 bg-white items-center justify-center rounded-tr-[60px] rounded-bl-[60px]">
-                <div id="info" className="h-full flex flex-col justify-between p-10">
+        <div className="h-screen w-screen bg-background px-3 md:px-20 lg:px-32 py-14 md:py-18 lg:py-24">
+            <div id="container" className="h-auto w-full flex-row p-6 bg-white items-center justify-center rounded-br-[60px] rounded-tl-[60px]">
+                <div id="info" className="h-full w-full flex flex-col p-2 lg:p-8 xl:p-10 ">
                     <div>
-                        <h1 id="contact-heading" className="font-semibold drop-shadow-lg text-md">Contact Us</h1>
+                        <h1 id="contact-heading" className="font-semibold drop-shadow-lg text-xl md:text-2xl lg:text-4xl">Contact Us</h1>
 
-                        <text id="contact-description" className="max-w-2xl py-2 mt-3 flex flex-col space-y-3 ">
+                        <span id="contact-description" className="py-2 mt-3 flex flex-col space-y-3 text-sm sm:text-md md:text-lg">
                             <span>
                                 Please feel free to drop by the NCSC Office at 45 Wilcocks Street to 
                                 connect with us, ask questions, and share your thoughts  <br />
@@ -22,42 +21,38 @@ const Contact = () => {
                                 Whether you have inquiries about upcoming events, want to get involved in student initiatives, 
                                 or simply need a friendly chat, our team is here for you
                             </span>
-                        </text>
+                        </span>
 
-                        <text id="contact-description" className="max-w-2xl py-2 mt-3 flex flex-col space-y-3 ">
+                        <span id="contact-description" className="py-2 mt-3 flex flex-col space-y-3 text-sm sm:text-md md:text-lg">
                             <span>
                                 <span className="font-bold">Get in Touch!</span> <br />
                                 General Inquiries - execs@ncsc.ca <br />
                                 Student Life - vpstudentlife@ncsc.ca  <br />
                             </span>
-                                    
-                            <span>
-                                Follow us on Instagram - @myncsc
-                            </span>
-                        </text>
+                        </span>
                     </div>
-
-                    <div className="w-full ">
+                    {/* <div className="w-full flex">
                         <Lottie animationData={contact} className="w-40 sm:w-52 md:w-80 lg:w-96" />
-                    </div>
+                    </div> */}
                 </div>
 
-                <div id="form" className="bg-secondary rounded-tr-[60px] h-full flex flex-col p-10">
-                    <div className="flex flex-row items-center space-x-2">
-                        <h2 id="form-title" className="font-semibold">Write us a Message</h2>
-                        <Lottie animationData={email} className="w-16" />
+                <div id="form" className="bg-secondary rounded-br-[60px] h-full flex flex-col flex-initial p-10">
+                    <div className="flex flex-row flex-initial items-center space-x-2">
+                        <h2 id="form-title" className="font-bold text-lg lg:text-xl">Write us a Message!</h2>
+                        {/* <Lottie animationData={email} className="w-16" /> */}
                     </div>
                     
-                    <form id="contact-form" className="flex flex-col">
-                        <label>Your Name</label>
-                        <input type="text" name="user_name" className="bg-primary rounded-xl" />
-                        <label className="mt-2">Your Email</label>
-                        <input type="email" name="user_email" className="bg-primary rounded-xl"/>
-                        <label className="mt-2">Message</label>
-                        <textarea name="message" className="bg-primary rounded-xl grow"></textarea>
-                        <button id="send-btn" className="w-28 mt-4">
-                            <div class="svg-wrapper-1">
-                                <div class="svg-wrapper">
+                    <form id="contact-form" className="flex flex-col mt-3">
+                        <label className="text-sm sm:text-md md:text-lg">Your Name</label>
+                        <input type="text" name="user_name" className="bg-primary rounded-xl p-2"/>
+                        <label className="text-sm sm:text-md md:text-lg mt-2">Your Email</label>
+                        <input type="email" name="user_email" className="bg-primary rounded-xl p-2"/>
+                        <label className="text-sm sm:text-md md:text-lg mt-2">Message</label>
+                        <textarea name="message" className="bg-primary rounded-xl h-72 p-2"></textarea>
+
+                        <button id="send-btn" className="w-28 mt-4 py-2">
+                            <div className="svg-wrapper-1">
+                                <div className="svg-wrapper">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 24 24"

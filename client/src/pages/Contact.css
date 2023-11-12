@@ -1,41 +1,39 @@
 
 #contact-heading {
-    @media only screen and (min-width: 768px) {
+    /* @media only screen and (min-width: 768px) {
         font-size: 2.5vw;
-      }
+      } */
       font-family: 'Lato', sans-serif;
 }
 
-#contact-description {
+#contact-description, #contact-form, #form-title {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: calc(0.7vh + 0.7vw);
+    /* font-size: calc(0.7vh + 0.7vw); */
 }
 
-#form-title {
-    font-size: calc(1vh + 0.75vw);
-  }
 
-#contact-form {
-    font-size: calc(0.9vh + 0.7vw);
-  }
-
-#info {
-  min-width: 40%;
-  max-width: 45%;
+/* the following 2 style blocks make flex items shrink until wrapping is necessary, 
+and then expand to fill the new space */
+#container {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
 }
 
-#form {
-  min-width: 40%;
-  max-width: 45%;
-} */
+#info, #form {
+  @media only screen and (min-width: 768px) {
+    min-width: 500px;
+  }
+  flex-grow: 2;
+  flex: 2 0 50%; 
+  /* If you want to ensure that you never get more than 2 items per row */
+}
 
   #send-btn {
     font-family: inherit;
     font-size: 20px;
     background: royalblue;
     color: white;
-    padding: 0.7em 1em;
     padding-left: 0.9em;
     display: flex;
     align-items: center;

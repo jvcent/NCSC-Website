@@ -18,7 +18,7 @@ import speech from "./assets/speech.json";
 const Home = () => {
 
     return (
-        <div className="flex flex-col h-auto">
+        <div className="flex flex-col h-auto w-screen">
             <div id="landing" className="h-screen w-screen bg-cover bg-center z-0" style={{ backgroundImage: `url(${sky})` }}>
                 <div className="h-full w-full bg-cover bg-center z-10 flex flex-col items-center" style={{ backgroundImage: `url(${park})` }}>
                     <div className="text-txt flex flex-col items-center mt-72" id="core">
@@ -56,11 +56,11 @@ const Home = () => {
                         <Lottie animationData={graduate} className="w-24 lg:w-48"/>
                     </div>
                 </div>
-                <div id="about" className="h-auto w-screen z-0 flex flex-col">
+                <div id="about" className="h-auto w-screen z-0 flex flex-col items-center">
                     <div id="slanted" className="w-screen bg-primary h-auto pt-6 md:pt-12 lg:pt-20 px-12 pb-10 lg:pb-24 flex flex-col items-center justify-center">
                         <h1 id="about-heading" className="font-semibold drop-shadow-lg text-md">Who are We?</h1>
                         <hr className="border-t-[1px] lg:border-t-[3px] border-txt w-3/5 mt-4 mb-4"/>
-                        <text id="about-description" className="max-w-3xl text-center flex flex-col space-y-3 ">
+                        <span id="about-description" className="max-w-4xl text-center flex flex-col space-y-3 ">
                             <span>
                             We are the official representatives of the 
                             students of New College in matters pertaining to the student body as a whole. <br />
@@ -72,27 +72,28 @@ const Home = () => {
                             project we undertake is guided by our commitment to enriching 
                             student life. 
                             </span>
-                        </text>
+                        </span>
                     </div>
-                    <div className="w-screen flex flex-row flex-wrap h-auto space-x-6 px-6 lg:px-12 justify-center justify-around mb-12">
-                        <div id="headers" className="flex flex-col items-center">
+                    <div id="header-container" className="w-screen flex flex-row px-6 lg:px-12 justify-center justify-around pb-20">
+                        <div id="header" className="flex flex-col items-center">
                             <Lottie animationData={hero} className="w-24 md:w-36 lg:w-52 xl:w-72"/>
                             <h2 id="info-title" className="font-semibold">Events & Activities</h2>
-                            <text id="info" className="text-center mt-3">Organizing a variety of events and activities that cater to diverse interests and preferences 
-                                within the student body. Creating platforms for fostering a sense of community</text>
+                            <span id="des" className="text-center mt-3 break-words p-3">Organizing a variety of events and activities that cater to diverse interests and preferences 
+                                within the student body. Creating platforms for fostering a sense of community</span>
                         </div>
-                        <div id="headers" className="flex flex-col items-center">
+                        <div id="header" className="flex flex-col items-center">
                             <Lottie animationData={speech} className="w-24 md:w-36 lg:w-52 xl:w-72"/>
                             <h2 id="info-title" className="font-semibold">Student Advocacy</h2>
-                            <text id="info" className="text-center mt-3">Fostering a sense of community by creating platforms for students to connect and build relationships. 
-                                Helping to address all issues involving academic policies, facilities, and student services</text>
+                            <span id="des" className="text-center mt-3 break-words p-3">Fostering a sense of community by creating platforms for students to connect and build relationships. 
+                                Helping to address all issues involving academic policies, facilities, and student services</span>
                         </div>
-                        <div id="headers" className="flex flex-col items-center">
+                        <div id="header" className="flex flex-col items-center">
                             <Lottie animationData={resources} className="w-24 md:w-36 lg:w-52 xl:w-72"/>
                             <h2 id="info-title" className="font-semibold">Resources & Support</h2>
-                            <text id="info" className="text-center mt-3">Providing resources and support systems all various kinds to assist students in navigating academic 
-                                challenges, personal development, and campus life</text>
+                            <span id="des" className="text-center mt-3 break-words p-3">Providing resources and support systems all various kinds to assist students in navigating academic 
+                                challenges, personal development, and campus life</span>
                         </div>
+
                     </div>
                 </div>
             </div>

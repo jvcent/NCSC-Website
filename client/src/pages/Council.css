@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga&family=Poppins&display=swap');
+
+#background-sheet {
+    min-height: 100vh;
+}
+
+#meet-council {
+    height: fit-content;
+    background: linear-gradient(
+    to bottom, 
+    #74db7600 0%, 
+    #74db7600 60%, 
+    #74DB75 60%, 
+    #74DB75 100%
+    );
+}
+
+#categories {
+    font-family: 'Montserrat', sans-serif;  
+}   
+
+#card {
+    flex: 1 0 21%
+}
+
+#name {
+    font-family: 'Lexend Giga', sans-serif;
+    font-weight: bold;
+}
+
+#position {
+    font-family: 'Poppins', sans-serif;
+}

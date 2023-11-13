@@ -1,5 +1,5 @@
 #contact-parent{
-  min-width: 100vh;
+  min-height: 100vh;
 }
 
 
@@ -19,19 +19,22 @@
 /* the following 2 style blocks make flex items shrink until wrapping is necessary, 
 and then expand to fill the new space */
 #container {
-  display: flex;
-  max-width: 100%;
-  flex-wrap: wrap;
+  @media only screen and (max-width: 1000px) {
+    flex-wrap: wrap;
+  }
 }
 
-#info, #form {
+#info {
+  max-width: 700px;
+}
+
+/* #info, #form {
   @media only screen and (min-width: 768px) {
     min-width: 500px;
   }
   flex-grow: 2;
   flex: 2 0 50%; 
-  /* If you want to ensure that you never get more than 2 items per row */
-}
+} */
 
   #send-btn {
     font-family: inherit;

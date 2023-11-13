@@ -1,12 +1,9 @@
 import "./Contact.css";
-import Lottie from "lottie-react";
-import contact from "./assets/contact.json";
-import email from "./assets/email.json";
 
 const Contact = () => {
     return (
         <div id="contact-parent" className="h-auto w-screen bg-background px-3 md:px-20 lg:px-32 py-14 md:py-18 lg:py-24">
-            <div id="container" className="h-auto w-full flex-row p-6 bg-white items-center justify-center rounded-br-[60px] rounded-tl-[60px]">
+            <div id="container" className="h-auto w-full flex flex-row p-6 bg-white items-center justify-center rounded-br-[60px] rounded-tl-[60px]">
                 <div id="info" className="h-full w-full flex flex-col p-2 lg:p-8 xl:p-10 ">
                     <div>
                         <h1 id="contact-heading" className="font-semibold drop-shadow-lg text-xl md:text-2xl lg:text-4xl">Contact Us</h1>
@@ -36,18 +33,18 @@ const Contact = () => {
                     </div> */}
                 </div>
 
-                <div id="form" className="bg-secondary rounded-br-[60px] h-full flex flex-col flex-initial p-10">
+                <div id="form" className="bg-secondary rounded-br-[60px] w-full h-full flex flex-col flex-initial p-10">
                     <div className="flex flex-row flex-initial items-center space-x-2">
-                        <h2 id="form-title" className="font-bold text-lg lg:text-xl">Write us a Message!</h2>
+                        <h2 id="form-title" className="font-extrabold text-lg lg:text-xl">Write us a Message!</h2>
                         {/* <Lottie animationData={email} className="w-16" /> */}
                     </div>
                     
                     <form id="contact-form" className="flex flex-col mt-3">
-                        <label className="text-sm sm:text-md md:text-lg">Your Name</label>
+                        <label className="text-sm sm:text-md md:text-lg font-semibold">Your Name</label>
                         <input type="text" name="user_name" className="bg-primary rounded-xl p-2"/>
-                        <label className="text-sm sm:text-md md:text-lg mt-2">Your Email</label>
+                        <label className="text-sm sm:text-md md:text-lg mt-2 font-semibold">Your Email</label>
                         <input type="email" name="user_email" className="bg-primary rounded-xl p-2"/>
-                        <label className="text-sm sm:text-md md:text-lg mt-2">Message</label>
+                        <label className="text-sm sm:text-md md:text-lg mt-2 font-semibold">Message</label>
                         <textarea name="message" className="bg-primary rounded-xl h-72 p-2"></textarea>
 
                         <button id="send-btn" className="w-28 mt-4 py-2">

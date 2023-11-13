@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga&family=Poppins&display=swap');
 
 #office-heading {
     @media only screen and (min-width: 768px) {
@@ -7,7 +8,7 @@
 }
 
 #office-description {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: calc(0.7vh + 0.7vw);
 }
@@ -26,8 +27,8 @@
     background: linear-gradient(
     to bottom, 
     #74db7600 0%, 
-    #74db7600 15%, 
-    #74DB75 15%, 
+    #74db7600 10%, 
+    #74DB75 10%, 
     #74DB75 100%
     );
   }

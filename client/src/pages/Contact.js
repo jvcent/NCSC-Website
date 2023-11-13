@@ -5,7 +5,7 @@ import email from "./assets/email.json";
 
 const Contact = () => {
     return (
-        <div className="h-screen w-screen bg-background px-3 md:px-20 lg:px-32 py-14 md:py-18 lg:py-24">
+        <div id="contact-parent" className="h-auto w-screen bg-background px-3 md:px-20 lg:px-32 py-14 md:py-18 lg:py-24">
             <div id="container" className="h-auto w-full flex-row p-6 bg-white items-center justify-center rounded-br-[60px] rounded-tl-[60px]">
                 <div id="info" className="h-full w-full flex flex-col p-2 lg:p-8 xl:p-10 ">
                     <div>

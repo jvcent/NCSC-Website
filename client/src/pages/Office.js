@@ -9,7 +9,7 @@ const Office = () => {
         py-6 lg:py-12 xl:py-20 px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-48">
             <div className="flex flex-col h-full w-full space-y-4 items-center justify-center">
                 <div id="topper" className="w-full h-20 flex flex-col items-center justify-end px-6">
-                    <div className="flex flex-row space-x-2 items-center">
+                    <div className="flex flex-row space-x-2 items-end">
                         <h1 id="office-heading" className="font-semibold drop-shadow-lg text-md">Office Hours</h1>
                         <Lottie animationData={calendar} className="w-12 md:w-24 lg:w-32 xl:w-40"/>
                     </div>

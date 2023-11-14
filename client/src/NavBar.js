@@ -23,7 +23,7 @@ const NavBar = () => {
 
     return (
         <div className='sticky z-30 top-0'>
-            <div className='bg-gradient-to-b from-white from-30% absolute w-screen flex flex-row justify-between items-center px-8 py-4 lg:px-12 lg:py-4'>
+            <div className='bg-gradient-to-b from-white from-60% absolute w-screen flex flex-row justify-between items-center px-8 py-4 lg:px-12 lg:py-4'>
                 <span className='cursor-pointer' onClick={() => handleNavClick("")}><img className='h-8 md:h-10 lg:-h-12 mt-2' src={ncsclogo} alt='NCSC Logo'/></span>
                 
                 <ul className={`lg:text-lg lg:text-xl flex flex-row space-x-8 font-semibold ${state ? "#navbar active" : "#navbar"}`} id='navbar'>

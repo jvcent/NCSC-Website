@@ -15,6 +15,9 @@
     /* font-size: calc(0.7vh + 0.7vw); */
 }
 
+#form-input {
+  box-shadow: 5px 5px 4px rgb(5, 92, 10)
+}
 
 /* the following 2 style blocks make flex items shrink until wrapping is necessary, 
 and then expand to fill the new space */
@@ -39,7 +42,7 @@ and then expand to fill the new space */
   #send-btn {
     font-family: inherit;
     font-size: 20px;
-    background: royalblue;
+    background: rgb(44, 146, 44);
     color: white;
     padding-left: 0.9em;
     display: flex;

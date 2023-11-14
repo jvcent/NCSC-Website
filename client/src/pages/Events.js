@@ -25,7 +25,8 @@ const Events = () => {
                     <Lottie animationData={xmastree} id="lotties"/>
                     <div className="flex flex-col">
                         <h3 id="event-name" className="mt-2">HOLIDAY PARTY</h3>
-                        <h4 id="event-description" className="mt-2">Get ready to kick off the holiday season 
+                        <h4 id="event-description" className="mt-2 font-semibold">24th November</h4>
+                        <h4 id="event-description">Get ready to kick off the holiday season 
                         with a festive bash at the William Doo Auditorium! Join us for a night 
                         of merriment and groove at our Holiday Party featuring a lively Just Dance 
                         party, Cookie decorating station, hot chocolate bar, and eggnog tasting.</h4>
@@ -39,7 +40,8 @@ const Events = () => {
                     <Lottie animationData={party} id="lotties"/>
                     <div className="flex flex-col">
                         <h3 id="event-name" className="mt-2">WINTER SEMI-FORMAL</h3>
-                        <h4 id="event-description" className="mt-2">Get ready to kick off the holiday season 
+                        <h4 id="event-description" className="mt-2 font-semibold">January</h4>
+                        <h4 id="event-description">Get ready to kick off the holiday season 
                         with a festive bash at the William Doo Auditorium! Join us for a night 
                         of merriment and groove at our Holiday Party featuring a lively Just Dance 
                         party, Cookie decorating station, hot chocolate bar, and eggnog tasting.</h4>
@@ -53,7 +55,8 @@ const Events = () => {
                     <Lottie animationData={valentines} id="lotties"/>
                     <div className="flex flex-col"> 
                         <h3 id="event-name" className="mt-2">VALENTINE'S DAY BASH</h3>
-                        <h4 id="event-description" className="mt-2">Get ready to kick off the holiday season 
+                        <h4 id="event-description" className="mt-2 font-semibold">February</h4>
+                        <h4 id="event-description">Get ready to kick off the holiday season 
                         with a festive bash at the William Doo Auditorium! Join us for a night 
                         of merriment and groove at our Holiday Party featuring a lively Just Dance 
                         party, Cookie decorating station, hot chocolate bar, and eggnog tasting.</h4>

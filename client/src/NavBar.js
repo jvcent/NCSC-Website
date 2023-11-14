@@ -21,6 +21,10 @@ const NavBar = () => {
         }
     }
 
+    const openInNewTab = (url) => {
+        window.open(url, "_blank", "noreferrer");
+      };
+
     return (
         <div className='sticky z-30 top-0'>
             <div className='bg-gradient-to-b from-white from-60% absolute w-screen flex flex-row justify-between items-center px-8 py-4 lg:px-12 lg:py-4'>
@@ -43,6 +47,13 @@ const NavBar = () => {
                     <li id='item' onClick={() => handleNavClick("office")} 
                     className={`${active === "office" ? "text-logo" : "text-txt"}`}>
                         <NavLink>Office Hours</NavLink>
+                    </li>
+                    <li id='item'>
+                        <button role="link" className="text-txt"
+                            onClick={() => openInNewTab("https://drive.google.com/file/d/1WBB2hjXtIz9I8ehgO2gHaJr68eTmRH4h/view")}
+                        >
+                            CONSTITUTION
+                        </button>
                     </li>
                     <li id='item' onClick={() => handleNavClick("contact")} 
                     className={`${active === "contact" ? "text-logo" : "text-txt"}`}>

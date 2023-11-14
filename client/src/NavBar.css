@@ -8,6 +8,7 @@
 
 @media screen and (max-width: 769px) {
     #navbar {
+        font-size: small;
         background-color: white;
         border-radius: 25px;
         display: flex;

@@ -52,6 +52,7 @@ and then expand to fill the new space */
     overflow: hidden;
     transition: all 0.2s;
     cursor: pointer;
+    box-shadow: 5px 5px 4px rgb(5, 92, 10)
   }
   
   #send-btn span {

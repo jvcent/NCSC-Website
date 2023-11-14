@@ -38,7 +38,7 @@ const Home = () => {
             </div>
 
             <div className="h-auto w-screen bg-background flex flex-col text-txt">
-                <div className="z-10 h-auto border-b-4 bg-white flex flex-row flex-wrap justify-around items-center py-2 px-2 text-lg font-semibold">
+                <div id="stats" className="z-10 h-auto border-b-4 bg-white flex flex-row flex-wrap justify-around items-center py-2 px-2 text-lg font-semibold">
                     <div className="flex flex-row space-x-2 items-center">
                         <span className="text-xs sm:text-base md:text-lg lg:text-xl">6000+ <br/> Students</span>
                         <Lottie animationData={studying} className="w-20 lg:w-40"/>

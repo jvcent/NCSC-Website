@@ -5,6 +5,7 @@ import party from "./assets/party.json";
 import valentines from "./assets/valentines.json";
 import "./Events.css";
 import { useEffect } from "react";
+import { motion as m } from "framer-motion";
 
 const Events = () => {
     useEffect(() => {
@@ -12,7 +13,7 @@ const Events = () => {
       }, [])
 
     return (
-        <div id="events-wrapper" className="h-auto w-screen pt-16 lg:pt-24 pb-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:32">
+        <m.div id="events-wrapper" className="h-auto w-screen pt-16 lg:pt-24 pb-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:32">
             <div className="h-auto w-full flex flex-col items-start">
                 <div className="flex flex-row items-center space-x-4">
                     <h1 className="font-semibold drop-shadow-lg text-2xl lg:text-4xl">Upcoming Events</h1>
@@ -66,7 +67,7 @@ const Events = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </m.div>
     );
 }
 

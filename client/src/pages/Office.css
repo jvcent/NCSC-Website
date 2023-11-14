@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Giga&family=Poppins&display=swap');
 
+#office-wrapper {
+  animation: slideInBottom ease 1.1s;
+}
+
 #office-heading {
     @media only screen and (min-width: 768px) {
         font-size: 2.5vw;

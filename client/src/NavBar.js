@@ -32,10 +32,6 @@ const NavBar = () => {
                 
                 <ul className={`lg:text-lg lg:text-xl flex flex-row space-x-8 font-semibold ${state ? "#navbar active" : "#navbar"}`} id='navbar'>
                     <li></li>
-                    <li id='item' onClick={() => handleNavClick("about")} 
-                    className={`${active === "about" ? "text-logo" : "text-txt"}`}>
-                        <HashLink smooth to='/#about' > About </HashLink>
-                    </li>
                     <li id='item' onClick={() => handleNavClick("events")} 
                     className={`${active === "events" ? "text-logo" : "text-txt"}`}>
                         <NavLink>Events</NavLink>

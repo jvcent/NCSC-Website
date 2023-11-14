@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import ncsclogo from './assets/ncsc-logo.png';
-import { HashLink } from 'react-router-hash-link';
+// import { HashLink } from 'react-router-hash-link';
 import { NavLink } from "react-router-dom";
 import './NavBar.css';
 

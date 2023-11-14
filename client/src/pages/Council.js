@@ -1,7 +1,12 @@
 import "./Council.css";
+import { useEffect } from "react";
 import profile from "./pictures/profile.jpg";
 
 const Council = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     return (
         <div id="background-sheet" className="h-auto w-screen pt-16 lg:pt-24 pb-10 px-6 sm:px-10 md:px-16 lg:px-28">
             <div className="h-auto w-full flex flex-col items-center">

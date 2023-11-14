@@ -4,8 +4,13 @@ import xmastree from "./assets/xmastree.json";
 import party from "./assets/party.json";
 import valentines from "./assets/valentines.json";
 import "./Events.css";
+import { useEffect } from "react";
 
 const Events = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     return (
         <div id="events-wrapper" className="h-auto w-screen pt-16 lg:pt-24 pb-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:32">
             <div className="h-auto w-full flex flex-col items-start">

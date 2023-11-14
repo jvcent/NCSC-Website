@@ -11,11 +11,15 @@ import council from "./assets/council.json";
 import hero from "./assets/hero.json";
 import resources from "./assets/resources.json";
 import speech from "./assets/speech.json";
+import { useEffect } from "react";
 
 // import thinker from "./assets/thinker.json";
 // import megaphone from "./assets/megaphone.json";
 
 const Home = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
 
     return (
         <div className="flex flex-col h-auto w-screen">

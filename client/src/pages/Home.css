@@ -75,7 +75,13 @@
     vertical-align: middle;
     text-decoration: none;
     font-family: inherit;
-    font-size: 15px;
+    font-size: 18px;
+    @media (max-width: 900px) {
+      font-size: 15px;
+    }
+    @media (max-width: 700px) {
+      font-size: 10px;
+    }
    }
    
    #explore-button.explore {

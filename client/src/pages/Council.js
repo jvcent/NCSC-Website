@@ -204,6 +204,13 @@ const Council = () => {
                     </div>
                     <div id="card" className="flex flex-col items-center">
                         <div className="h-52 w-52 bg-background rounded-full p-3 my-3">
+                            <img src={profile} alt="TIFFANY YANG" className="rounded-full object-cover"/>
+                        </div>
+                        <h3 id="name" className="mt-1">TIFFANY YANG</h3>
+                        <h4 id="position" className="mt-1">MARKETING COORDINATOR</h4>
+                    </div>
+                    <div id="card" className="flex flex-col items-center">
+                        <div className="h-52 w-52 bg-background rounded-full p-3 my-3">
                             <img src={profile} alt="SUNG PARK" className="rounded-full object-cover"/>
                         </div>
                         <h3 id="name" className="mt-1">SUNG PARK</h3>

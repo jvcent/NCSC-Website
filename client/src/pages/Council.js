@@ -1,12 +1,17 @@
 import "./Council.css";
-import { useEffect } from "react";
 import profile from "./pictures/profile.jpg";
+import boyan from "./pictures/boyan.jpg";
+import eric from "./pictures/eric.png";
+import isaac from "./pictures/isaac.jpg";
+import momo from "./pictures/momo.jpg";
+import noe from "./pictures/noe.jpg";
+import ryan from "./pictures/ryan.jpg";
+import siliscy from "./pictures/siliscy.jpg";
+import sung from "./pictures/sung.jpeg";
+import yvonne from "./pictures/yvonne.jpg";
+import dawei from "./pictures/dawei.jpg";
 
 const Council = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0)
-      }, [])
-
     return (
         <div id="background-sheet" className="h-auto w-screen pt-16 lg:pt-24 pb-10 px-6 sm:px-10 md:px-16 lg:px-28">
             <div className="h-auto w-full flex flex-col items-center">
@@ -38,7 +43,7 @@ const Council = () => {
                     </div>
                     <div id="card" className="flex flex-col items-center">
                         <div className="h-52 w-52 bg-background rounded-full p-3 my-3">
-                            <img src={profile} alt="DAWEI WANG" className="rounded-full object-cover"/>
+                            <img src={dawei} alt="DAWEI WANG" className="rounded-full object-cover"/>
                         </div>
                         <h3 id="name" className="mt-1">DAWEI WANG</h3>
                         <h4 id="position" className="mt-1">VICE PRESIDENT ADMINISTRATION</h4>
@@ -84,14 +89,14 @@ const Council = () => {
                     </div>
                     <div id="card" className="flex flex-col items-center">
                         <div className="h-52 w-52 bg-background rounded-full p-3 my-3">
-                            <img src={profile} alt="NOÉ COFFIN" className="rounded-full object-cover"/>
+                            <img src={noe} alt="NOÉ COFFIN" className="rounded-full object-cover"/>
                         </div>
                         <h3 id="name" className="mt-1">NOÉ COFFIN</h3>
                         <h4 id="position" className="mt-1">OFF CAMPUS REPRESENTATIVE</h4>
                     </div>
                     <div id="card" className="flex flex-col items-center">
                         <div className="h-52 w-52 bg-background rounded-full p-3 my-3">
-                            <img src={profile} alt="YVONNE CHEN" className="rounded-full object-cover"/>
+                            <img src={yvonne} alt="YVONNE CHEN" className="rounded-full object-cover"/>
                         </div>
                         <h3 id="name" className="mt-1">YVONNE CHEN</h3>
                         <h4 id="position" className="mt-1">GRADUATING YEAR REPRESENTATIVE</h4>
@@ -116,7 +121,7 @@ const Council = () => {
                 <div className="flex flex-row flex-wrap w-full text-center space-x-4">
                     <div id="card" className="flex flex-col items-center">
                         <div className="h-52 w-52 bg-background rounded-full p-3 my-3">
-                            <img src={profile} alt="ISAAC NG" className="rounded-full object-cover"/>
+                            <img src={isaac} alt="ISAAC NG" className="rounded-full object-cover"/>
                         </div>
                         <h3 id="name" className="mt-1">ISAAC NG</h3>
                         <h4 id="position" className="mt-1">EDUCATION & PHILANTHROPY COMMISSIONER</h4>
@@ -130,14 +135,14 @@ const Council = () => {
                     </div>
                     <div id="card" className="flex flex-col items-center">
                         <div className="h-52 w-52 bg-background rounded-full p-3 my-3">
-                            <img src={profile} alt="RYAN CHAR" className="rounded-full object-cover"/>
+                            <img src={ryan} alt="RYAN CHAR" className="rounded-full object-cover"/>
                         </div>
                         <h3 id="name" className="mt-1">RYAN CHAR</h3>
                         <h4 id="position" className="mt-1">ATHLETICS COMMISSIONER</h4>
                     </div>
                     <div id="card" className="flex flex-col items-center">
                         <div className="h-52 w-52 bg-background rounded-full p-3 my-3">
-                            <img src={profile} alt="SILISCY GAO" className="rounded-full object-cover"/>
+                            <img src={siliscy} alt="SILISCY GAO" className="rounded-full object-cover"/>
                         </div>
                         <h3 id="name" className="mt-1">SILISCY GAO</h3>
                         <h4 id="position" className="mt-1">MENTAL HEALTH & WELLNESS COMMISSIONER</h4>
@@ -158,7 +163,7 @@ const Council = () => {
                     </div>
                     <div id="card" className="flex flex-col items-center">
                         <div className="h-52 w-52 bg-background rounded-full p-3 my-3">
-                            <img src={profile} alt="ERIC CHEN" className="rounded-full object-cover"/>
+                            <img src={eric} alt="ERIC CHEN" className="rounded-full object-cover"/>
                         </div>
                         <h3 id="name" className="mt-1">ERIC CHEN</h3>
                         <h4 id="position" className="mt-1">SOCIAL COMMISSIONER</h4>
@@ -169,6 +174,13 @@ const Council = () => {
                         </div>
                         <h3 id="name" className="mt-1">CATHERINE WANG</h3>
                         <h4 id="position" className="mt-1">SOCIAL COMMISSIONER</h4>
+                    </div>
+                    <div id="card" className="flex flex-col items-center">
+                        <div className="h-52 w-52 bg-background rounded-full p-3 my-3">
+                            <img src={boyan} alt="BOYAN XUE" className="rounded-full object-cover"/>
+                        </div>
+                        <h3 id="name" className="mt-1">BOYAN XUE</h3>
+                        <h4 id="position" className="mt-1">EQUITY COMMISSIONER</h4> 
                     </div>
                     <div id="card" className="flex flex-col items-center">
                         <div className="h-52 w-52 bg-background rounded-full p-3 my-3">
@@ -190,7 +202,7 @@ const Council = () => {
                     </div>
                     <div id="card" className="flex flex-col items-center">
                         <div className="h-52 w-52 bg-background rounded-full p-3 my-3">
-                            <img src={profile} alt="MOMO UJI" className="rounded-full object-cover"/>
+                            <img src={momo} alt="MOMO UJI" className="rounded-full object-cover"/>
                         </div>
                         <h3 id="name" className="mt-1">MOMO UJI</h3>
                         <h4 id="position" className="mt-1">SOCIAL MEDIA MANAGER</h4>
@@ -204,14 +216,7 @@ const Council = () => {
                     </div>
                     <div id="card" className="flex flex-col items-center">
                         <div className="h-52 w-52 bg-background rounded-full p-3 my-3">
-                            <img src={profile} alt="TIFFANY YANG" className="rounded-full object-cover"/>
-                        </div>
-                        <h3 id="name" className="mt-1">TIFFANY YANG</h3>
-                        <h4 id="position" className="mt-1">MARKETING COORDINATOR</h4>
-                    </div>
-                    <div id="card" className="flex flex-col items-center">
-                        <div className="h-52 w-52 bg-background rounded-full p-3 my-3">
-                            <img src={profile} alt="SUNG PARK" className="rounded-full object-cover"/>
+                            <img src={sung} alt="SUNG PARK" className="rounded-full object-cover"/>
                         </div>
                         <h3 id="name" className="mt-1">SUNG PARK</h3>
                         <h4 id="position" className="mt-1">SPEAKER</h4>

@@ -14,7 +14,9 @@ import sam from "./pictures/sam.png";
 import dean from "./pictures/dean.jpeg";
 import noah from "./pictures/noah.JPG";
 import catherine from "./pictures/catherine.jpg";
-
+import agnes from "./pictures/agnes.jpg";
+import anna from "./pictures/anna.jpg";
+import jeya from "./pictures/jeya.jpg";
 
 const Council = () => {
     return (
@@ -80,7 +82,7 @@ const Council = () => {
                     </div>
                     <div id="card" className="flex flex-col items-center">
                         <div className="h-52 w-52 bg-background rounded-full p-3 my-3">
-                            <img src={profile} alt="JEYA SCOTT" className="rounded-full object-cover"/>
+                            <img src={jeya} alt="JEYA SCOTT" className="rounded-full object-cover"/>
                         </div>
                         <h3 id="name" className="mt-1">JEYA SCOTT</h3>
                         <h4 id="position" className="mt-1">MID-YEAR REPRESENTATIVE</h4>
@@ -161,7 +163,7 @@ const Council = () => {
                     </div>
                     <div id="card" className="flex flex-col items-center">
                         <div className="h-52 w-52 bg-background rounded-full p-3 my-3">
-                            <img src={profile} alt="ANNA LI" className="rounded-full object-cover"/>
+                            <img src={anna} alt="ANNA LI" className="rounded-full object-cover"/>
                         </div>
                         <h3 id="name" className="mt-1">ANNA LI</h3>
                         <h4 id="position" className="mt-1">SOCIAL COMMISSIONER</h4>
@@ -189,7 +191,7 @@ const Council = () => {
                     </div>
                     <div id="card" className="flex flex-col items-center">
                         <div className="h-52 w-52 bg-background rounded-full p-3 my-3">
-                            <img src={profile} alt="AGNES WONG" className="rounded-full object-cover"/>
+                            <img src={agnes} alt="AGNES WONG" className="rounded-full object-cover"/>
                         </div>
                         <h3 id="name" className="mt-1">AGNES WONG</h3>
                         <h4 id="position" className="mt-1"> SUSTAINABILITY COMMISSIONER</h4> 

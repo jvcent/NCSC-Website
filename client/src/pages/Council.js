@@ -17,7 +17,7 @@ import catherine from "./pictures/catherine.jpg";
 import agnes from "./pictures/agnes.jpg";
 import anna from "./pictures/anna.jpg";
 import jeya from "./pictures/jeya.jpg";
-import navya from "./pictures/navya.jpg";
+import navya from "./pictures/navya.JPG";
 import jonathan from "./pictures/jonathan.jpg";
 
 const Council = () => {

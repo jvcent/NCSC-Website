@@ -17,6 +17,8 @@ import catherine from "./pictures/catherine.jpg";
 import agnes from "./pictures/agnes.jpg";
 import anna from "./pictures/anna.jpg";
 import jeya from "./pictures/jeya.jpg";
+import navya from "./pictures/navya.jpg";
+import jonathan from "./pictures/jonathan.jpg";
 
 const Council = () => {
     return (
@@ -43,7 +45,7 @@ const Council = () => {
                     </div>
                     <div id="card" className="flex flex-col items-center">
                         <div className="h-52 w-52 bg-background rounded-full p-3 my-3">
-                            <img src={profile} alt="NAVYA SIDDIQUI" className="rounded-full object-cover"/>
+                            <img src={navya} alt="NAVYA SIDDIQUI" className="rounded-full object-cover"/>
                         </div>
                         <h3 id="name" className="mt-1">NAVYA SIDDIQUI</h3>
                         <h4 id="position" className="mt-1">VICE PRESIDENT STUDENT LIFE</h4>
@@ -216,7 +218,7 @@ const Council = () => {
                     </div>
                     <div id="card" className="flex flex-col items-center">
                         <div className="h-52 w-52 bg-background rounded-full p-3 my-3">
-                            <img src={profile} alt="JONATHAN VINCENTIUS" className="rounded-full object-cover"/>
+                            <img src={jonathan} alt="JONATHAN VINCENTIUS" className="rounded-full object-cover"/>
                         </div>
                         <h3 id="name" className="mt-1">JONATHAN VINCENTIUS</h3>
                         <h4 id="position" className="mt-1">WEB DESIGNER</h4>

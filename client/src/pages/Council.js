@@ -19,6 +19,11 @@ import anna from "./pictures/anna.jpg";
 import jeya from "./pictures/jeya.jpg";
 import navya from "./pictures/navya.JPG";
 import jonathan from "./pictures/jonathan.jpg";
+import farheen from "./pictures/farheen.jpg";
+import heather from "./pictures/heather.JPG";
+import joaquin from "./pictures/joaquin.PNG";
+import nawaal from "./pictures/nawaal.jpeg";
+import nerissa from "./pictures/nerissa.jpg";
 
 const Council = () => {
     return (
@@ -31,7 +36,7 @@ const Council = () => {
                 <div className="flex flex-row flex-wrap w-full text-center space-x-4">
                     <div id="card" className="flex flex-col items-center">
                         <div className="h-52 w-52 bg-background rounded-full p-3 my-3">
-                            <img src={profile} alt="NERISSA FENG" className="rounded-full object-cover"/>
+                            <img src={nerissa} alt="NERISSA FENG" className="rounded-full object-cover"/>
                         </div>
                         <h3 id="name" className="mt-1">NERISSA FENG</h3>
                         <h4 id="position" className="mt-1">PRESIDENT</h4>
@@ -70,7 +75,7 @@ const Council = () => {
                     </div>
                     <div id="card" className="flex flex-col items-center">
                         <div className="h-52 w-52 bg-background rounded-full p-3 my-3">
-                            <img src={profile} alt="FARHEEN HIRJI" className="rounded-full object-cover"/>
+                            <img src={farheen} alt="FARHEEN HIRJI" className="rounded-full object-cover"/>
                         </div>
                         <h3 id="name" className="mt-1">FARHEEN HIRJI</h3>
                         <h4 id="position" className="mt-1">FIRST YEAR REPRESENTATIVE</h4>
@@ -112,7 +117,7 @@ const Council = () => {
                     </div>
                     <div id="card" className="flex flex-col items-center">
                         <div className="h-52 w-52 bg-background rounded-full p-3 my-3">
-                            <img src={profile} alt="JOAQUIN ALONSO NAVEDA PAZ" className="rounded-full object-cover"/>
+                            <img src={joaquin} alt="JOAQUIN ALONSO NAVEDA PAZ" className="rounded-full object-cover"/>
                         </div>
                         <h3 id="name" className="mt-1">JOAQUIN ALONSO NAVEDA PAZ</h3>
                         <h4 id="position" className="mt-1">GRADUATING YEAR REPRESENTATIVE</h4>
@@ -158,7 +163,7 @@ const Council = () => {
                     </div>
                     <div id="card" className="flex flex-col items-center">
                         <div className="h-52 w-52 bg-background rounded-full p-3 my-3">
-                            <img src={profile} alt="HEATHER LIN" className="rounded-full object-cover"/>
+                            <img src={heather} alt="HEATHER LIN" className="rounded-full object-cover"/>
                         </div>
                         <h3 id="name" className="mt-1">HEATHER LIN</h3>
                         <h4 id="position" className="mt-1">SOCIAL COMMISSIONER</h4>
@@ -204,7 +209,7 @@ const Council = () => {
                 <div className="flex flex-row flex-wrap w-full text-center space-x-4">
                     <div id="card" className="flex flex-col items-center">
                         <div className="h-52 w-52 bg-background rounded-full p-3 my-3">
-                            <img src={profile} alt="NAWAAL ESSA EBRAHIM" className="rounded-full object-cover"/>
+                            <img src={nawaal} alt="NAWAAL ESSA EBRAHIM" className="rounded-full object-cover"/>
                         </div>
                         <h3 id="name" className="mt-1">NAWAAL ESSA EBRAHIM</h3>
                         <h4 id="position" className="mt-1">CLERK</h4>

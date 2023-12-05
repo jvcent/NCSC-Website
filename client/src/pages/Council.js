@@ -1,5 +1,4 @@
 import "./Council.css";
-import profile from "./pictures/profile.jpg";
 import boyan from "./pictures/boyan.jpg";
 import eric from "./pictures/eric.png";
 import isaac from "./pictures/isaac.jpg";
@@ -18,7 +17,7 @@ import agnes from "./pictures/agnes.jpg";
 import anna from "./pictures/anna.jpg";
 import jeya from "./pictures/jeya.jpg";
 import navya from "./pictures/navya.JPG";
-import jonathan from "./pictures/jonathan.jpg";
+import jonathan from "./pictures/jonathan.JPG";
 import farheen from "./pictures/farheen.jpg";
 import heather from "./pictures/heather.JPG";
 import joaquin from "./pictures/joaquin.PNG";
@@ -29,6 +28,7 @@ import justin from "./pictures/justin.jpg";
 import kalsoom from "./pictures/kalsoom.jpg";
 import shawn from "./pictures/shawn.jpg";
 import tiffany from "./pictures/tiffany.jpg";
+import agrata from "./pictures/agrata.jpg";
 
 const Council = () => {
     return (
@@ -256,7 +256,7 @@ const Council = () => {
                     </div>
                     <div id="card" className="flex flex-col items-center">
                         <div className="h-52 w-52 bg-background rounded-full p-3 my-3">
-                            <img src={profile} alt="AGRATA GUPTA" className="rounded-full object-cover"/>
+                            <img src={agrata} alt="AGRATA GUPTA" className="rounded-full object-cover"/>
                         </div>
                         <h3 id="name" className="mt-1">AGRATA GUPTA</h3>
                         <h4 id="position" className="mt-1">DEPUTY RETURNING OFFICER</h4>

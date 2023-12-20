@@ -17,7 +17,7 @@ import agnes from "./pictures/agnes.jpg";
 import anna from "./pictures/anna.jpg";
 import jeya from "./pictures/jeya.jpg";
 import navya from "./pictures/navya.JPG";
-import jonathan from "./pictures/jonathan.JPG";
+import jonathan from "./pictures/jonathan.jpeg";
 import farheen from "./pictures/farheen.jpg";
 import heather from "./pictures/heather.JPG";
 import joaquin from "./pictures/joaquin.PNG";

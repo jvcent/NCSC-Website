@@ -1,6 +1,23 @@
 import "./Contact.css";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 const Contact = () => {
+    
+    const form = useRef();
+    
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+    
     return (
         <div id="contact-parent" className="h-auto w-screen bg-background px-3 md:px-20 lg:px-32 py-14 md:py-18 lg:py-24">
             <div id="container" className="h-auto w-full flex flex-row p-6 bg-white items-center justify-center rounded-br-[60px] rounded-tl-[60px]">
@@ -48,6 +65,7 @@ const Contact = () => {
                         <textarea id="form-input" name="message" className="bg-background2 rounded-xl h-72 p-2"></textarea>
 
                         <button id="send-btn" className="w-28 mt-4 py-2">
+                            <input type="submit" value="" />
                             <div className="svg-wrapper-1">
                                 <div className="svg-wrapper">
                                 <svg

@@ -12,6 +12,10 @@ const Events = () => {
         window.scrollTo(0, 0)
       }, [])
 
+    const openInNewTab = (url) => {
+        window.open(url, "_blank", "noreferrer");
+      };
+
     return (
         <m.div id="events-wrapper" className="h-auto w-screen pt-16 lg:pt-24 pb-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:32">
             <div className="h-auto w-full flex flex-col items-start">
@@ -40,13 +44,16 @@ const Events = () => {
                 <div id="event-container" className="h-auto flex flex-row items-center w-full space-x-4 mt-8 pb-4 px-4">
                     <Lottie animationData={party} id="lotties"/>
                     <div className="flex flex-col">
-                        <h3 id="event-name" className="mt-2">WINTER SEMI-FORMAL</h3>
-                        <h4 id="event-description" className="mt-2 font-semibold">January</h4>
-                        <h4 id="event-description">Get ready to kick off the holiday season 
-                        with a festive bash at the William Doo Auditorium! Join us for a night 
-                        of merriment and groove at our Holiday Party featuring a lively Just Dance 
-                        party, Cookie decorating station, hot chocolate bar, and eggnog tasting.</h4>
-                        <button id="register-button"
+                        <h3 id="event-name" className="mt-2">NEW COLLEGE SEMI-FORMAL</h3>
+                        <h4 id="event-description" className="mt-2 font-semibold">20th January, 7-10pm</h4>
+                        <h4 id="event-description">NCSC & NCRC welcomes you to THE New College Semi Formal at
+                        the Dominion Ballroom, Sheraton Centre, Toronto.
+                        Enter a night of hors d’oeuvres, refreshments, photo booth and fun! 🕺💃🏻
+                        Recommended dress code is Semi-formal attire.
+                        What to expect: hors d’oeuvres, refreshments, photobooth.
+                        </h4>
+                        <button id="register-button" 
+                        onClick={() => openInNewTab("https://www.eventbrite.ca/e/nuit-etoilee-new-college-semi-formal-tickets-779018052967?aff=oddtdtcreator")}
                         className="explore tracking-wider text-white rounded-full mt-8 px-4 lg:px-6 py-2"
                         >REGISTER</button>
                     </div>

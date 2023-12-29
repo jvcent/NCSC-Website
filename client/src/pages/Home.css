@@ -39,7 +39,7 @@
 #about-description {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: calc(0.7vh + 0.8vw);
+    font-size: calc(0.8vh + 0.8vw);
 }
 
 #header-container {
@@ -54,6 +54,9 @@
 
 #des {
   font-size: calc(0.75vh + 0.75vw); 
+  @media screen and (max-width: 500px) {
+    font-size: calc(0.95vh + 0.95vw); 
+  }
 
   @media (max-width: 900px) {
     padding-right: 80px;

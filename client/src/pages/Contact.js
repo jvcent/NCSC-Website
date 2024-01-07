@@ -10,9 +10,13 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+        emailjs.sendForm('service_2p7qj21', 'template_vbgu28j', form.current, 'n7BbkmdsembQYiv1a')
         .then((result) => {
             console.log(result.text);
+            console.log("message sent");
+
+            // Reset the form after successful submission
+            form.current.reset();
         }, (error) => {
             console.log(error.text);
         });
@@ -56,9 +60,9 @@ const Contact = () => {
                         {/* <Lottie animationData={email} className="w-16" /> */}
                     </div>
                     
-                    <form id="contact-form" className="flex flex-col mt-3">
+                    <form ref={form} onSubmit={sendEmail} id="contact-form" className="flex flex-col mt-3">
                         <label className="text-sm sm:text-md md:text-lg font-semibold">Your Name</label>
-                        <input id="form-input" type="text" name="user_name" className="bg-background2 rounded-xl p-2"/>
+                        <input id="form-input" type="text" name="from_name" className="bg-background2 rounded-xl p-2"/>
                         <label className="text-sm sm:text-md md:text-lg mt-4 font-semibold">Your Email</label>
                         <input id="form-input" type="email" name="user_email" className="bg-background2 rounded-xl p-2"/>
                         <label className="text-sm sm:text-md md:text-lg mt-4 font-semibold">Message</label>

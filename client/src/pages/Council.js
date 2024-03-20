@@ -26,7 +26,6 @@ import nerissa from "./pictures/nerissa.jpg";
 import hargun from "./pictures/hargun.jpg";
 import justin from "./pictures/justin.jpg";
 import kalsoom from "./pictures/kalsoom.jpg";
-import shawn from "./pictures/shawn.jpg";
 import tiffany from "./pictures/tiffany.jpg";
 import agrata from "./pictures/agrata.jpg";
 
@@ -126,13 +125,6 @@ const Council = () => {
                         </div>
                         <h3 id="name" className="mt-1">JOAQUIN ALONSO NAVEDA PAZ</h3>
                         <h4 id="position" className="mt-1">GRADUATING YEAR REPRESENTATIVE</h4>
-                    </div>
-                    <div id="card" className="flex flex-col items-center">
-                        <div className="h-52 w-52 bg-background rounded-full p-3 my-3">
-                            <img src={shawn} alt="SHAWN KOSHIKAWA" className="rounded-full object-cover"/>
-                        </div>
-                        <h3 id="name" className="mt-1">SHAWN KOSHIKAWA</h3>
-                        <h4 id="position" className="mt-1">INTERNATIONAL FOUNDATIONS PROGRAM REPRESENTATIVE</h4>
                     </div>
                 </div>
 
